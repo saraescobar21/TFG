@@ -1,0 +1,43 @@
+<ul id="MenuBar1" class="MenuBarHorizontal">
+	<li><a href="#" class="MenuBarItemSubmenu">Empresario</a>
+		<ul>
+			<li><a
+				href="${pageContext.request.contextPath}/altaempresario.jsp">Nuevo Empresario</a></li>
+			<li><a
+				href="${pageContext.request.contextPath}/controller?operacion=listarEmpresarios">Listado
+					de Empresarios</a></li>
+		</ul></li>
+		
+		<li><a href="#" class="MenuBarItemSubmenu">Servicios</a>
+		<ul>
+			<li><a
+				href="${pageContext.request.contextPath}/controller?operacion=insertaservicio">Nuevo Servicio</a></li>
+				
+			<li><a
+				href="${pageContext.request.contextPath}/controller?operacion=listarServicios">Listado
+					de Servicios</a></li>
+		</ul></li>
+		
+		<li><a href="#" class="MenuBarItemSubmenu">Facturas</a>
+		<ul>
+			<li><a
+				href="${pageContext.request.contextPath}/altafactura.jsp">Nueva Factura</a></li>
+				
+			<li><a
+				href="${pageContext.request.contextPath}/controller?operacion=listarFacturas">Listado
+					de Facturas</a></li>
+		</ul></li>
+		
+	<li><a class="MenuBarItemSubmenu" href="#">Sesion</a>
+		<ul>
+			<li><a
+				href="${pageContext.request.contextPath}/controller?operacion=logout">Logout</a></li>
+		</ul>
+</ul>
+
+<script type="text/javascript">
+	var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {
+		imgDown : "/biblioteca-web/resources/img/SpryMenuBarDownHover.gif",
+		imgRight : "/Biblioteca/resources/img/SpryMenuBarRightHover.gif"
+	});
+</script>
